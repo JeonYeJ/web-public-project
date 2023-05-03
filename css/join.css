@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+* {
+   padding: 0;
+   margin: 0;
+}
+
+.joinbox{
+   width: 1000px; /* height는 기본값이 auto : 자손높이만큼 차지 */
+   margin: 0 auto; /* 블록요소를 부모영역에서 가로 가운데 오게 처리 */
+}
+
+.joinbox h2 {
+   width: 100%; /* 부모영역 상속 */
+   text-align: center; /* 자손인 텍스트를 가로 가운데 처리 */
+   padding: 70px 0; /* 앞상하 뒷좌우 */
+   font-size: 36px;
+}
+
+.joinbox fieldset {
+   border: none; /* 테두리제거 */
+   margin-bottom: 50px; /* 폼구역간의 여백 설정 */
+}
+
+.joinbox legend {
+   font-size: 28px; color: #333;
+   font-weight: bold;
+   border-bottom: 1px solid #333;
+   padding-bottom: 15px; /* 테두리 안쪽여백 */
+   margin-bottom: 30px; /* 테두리 바깥쪽여백 */
+   width: 100%;
+}
+
+.joinbox table {
+   width: 100%;
+   border-spacing: 0;
+   border-collapse: collapse;
+   border-top: 2px solid #323844;
+   border-bottom: 2px solid #323844;
+}
+
+.joinbox caption {
+   text-align: left; /* 기본값이 center여서 변경함 */
+   color: #666;
+   font-size: 14px;
+   margin-bottom: 10px; /* 동위선택자와의 간격조정 */
+}
+
+.joinbox th, .joinbox td {
+   border-bottom: 1px solid #323844;
+   padding: 15px 10px;
+}
+
+.joinbox .star {
+   font-size: 14px; font-weight: bold;
+   color: #e4ad12;
+   position: relative;
+   top: 1px;
+}
+
+.joinbox th{
+   background-color: #323844;
+   color: #fff; font-size: 14px;
+   text-align: left;
+   width: 150px;
+}
+
+.joinbox td {
+   color: #666; font-size: 12px;
+   line-height: 30px;
+}
+
+.joinbox .box01 {
+   width: 200px; height: 30px;
+   border: 2px solid #999;
+   box-sizing: border-box;
+   padding: 0 10px; /* 앞상하 뒷자우 - value값이 테두리에 너무 붙어서 나오는것을 방지 */
+  margin-right: 5px;
+} 
+
+.joinbox button[type="button"]{
+   height: 30px;
+   padding: 0 15px; /* 앞상하 뒷좌우 */
+   border: none; /* 원래 들어가 있던 테두리 제거 */
+   background-color: #e4ad12;
+   color: #fff; font-size: 14px; font-weight: bold;
+   margin-right: 5px;
+}
+
+.joinbox input[type="radio"]{
+   position: relative;
+   top: 2px;
+   margin: 5px;
+}
+
+.joinbox input[type="radio"] + label {
+   margin-right: 15px;
+}
+
+.joinbox .second { width: 500px; }
+
+
+.joinbox .box02 {
+   width: 100px; height: 30px;
+   border: 2px solid #999;
+   box-sizing: border-box;
+   padding: 0 10px;
+  margin-right: 5px;
+} 
+
+.joinbox .away{
+   position: absolute;
+   left: -999em; /* 화면밖으로 보냄 */
+}
+#joinaddr01{
+   background-color: #efebe9;
+}
+
+#joinaddr01, #joinaddr02 {
+   margin-top: 10px;
+} 
+
+.joinbox h3 {
+   font-size: 16px;
+   color: #333;
+   margin-bottom: 25px;
+}
+
+.joinbox article {
+   width: 100%;
+   height: 200px;
+   border: 1px solid #333;
+   padding: 20px;
+   box-sizing: border-box; /* 테두리와 패딩을 영역안으로 인사이트 처리 */
+   overflow-x: hidden; /* 세로 스크롤바 나오게 처리 */
+   font-size: 12px;
+   color: #666;
+   line-height: 20px;
+   margin-bottom: 10px; /* 체크박스와의 간격조정 */
+}
+
+.joinbox input[tssype="checkbox"] + label {
+   font-size: 12px;
+   color: #666;
+   position: relative;
+   top: -2px; /* 자신위치에서 상대적 이동 */
+}
+
+.joinbox .member {
+   margin-bottom: 30px;
+}
+
+.joinbox .personal {
+   margin-bottom: 50px;
+}
+
+.joinbox .allchkarea{
+   text-align: center;
+   padding-bottom: 40px;
+}
+
+.joinbox .btnarea {
+   text-align: center;
+}
+
+#ok {
+   width: 150px;
+   height: 50px;
+   background-color:#e4ad12 ;
+   border: none;
+}
+
+#cancle {
+   width: 150px;
+   height: 50px;
+   background-color: #bdbdbd;
+   border: none;
+}
+
+#email {
+   font-size: 12px;
+}

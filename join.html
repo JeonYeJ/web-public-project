@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>회원가입만들기</title>
+   <style>
+      h1{ color: red; }
+   </style>
+   <link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+   <h1>***** 임시 회원가입 창 *****</h1>
+   <div class="joinbox">
+      <h2>회원가입</h2>
+      <form action="#">
+         <fieldset>
+            <legend>개인정보입력</legend>
+            <table>
+               <caption>
+                  <span class="star">*</span>
+                  표시는 필수입력 정보입니다.
+               </caption>
+               <tr>
+                  <th>
+                     <!-- 모든 input, textarea, select태그는 label태그와 연결되어야함 : 웹접근성 -->
+                     <label for="joinid">아이디</label>
+                     <span class="star">*</span>
+               
+                  </th>
+                  <td colspan="3">
+                     <input type="text" class="box01" id="joinid" maxlength="12">
+                     <button type="button">중복검사</button> *6~12글자 사이로 입력해주세요 
+                  </td>
+               </tr>
+               <tr>
+                  <th>
+                     <label for="joinpass">비밀번호</label>
+                     <span class="star">*</span>
+                  </th>
+                  <td colspan="3">
+                     <input type="password" class="box01" id="joinpass" maxlength="12">
+                     *6~12글자 사이로 입력해주세요 
+                  </td>
+               </tr>
+               <tr>
+                  <th>
+                     <label for="joinpasschk">비밀번호확인</label>
+                  </th>
+                  <td colspan="3">
+                     <input type="password" id="joinpasschk" maxlength="12" class="box01">
+                     *6~12글자 사이로 입력해주세요
+                  </td>
+               </tr>
+               <tr>
+                  <th>
+                     <label for="joinname">이름</label>
+                     <span class="star">*</span>
+                  </th>
+                  <td>
+                     <input type="text" id="joinname" class="box01">
+                  </td>
+                  <th>
+                     성별
+                     <span class="star">*</span>
+                  </th>
+                  <td>
+                     <input type="radio" name="gender" id="female" checked>
+                     <label for="female">여성</label>
+                     <input type="radio" name="gender" id="male">
+                     <label for="male">남성</label>
+                  </td>
+               </tr>
+               <tr>
+                  <th>
+                     <label for="engname">영문이름</label>
+                     <span class="star">*</span>
+                  </th>
+                  <td colspan="3">
+                     <input type="text" id="engname" class="box01">
+                     ex) Hong Gil Dong
+                  </td>
+               </tr>
+               <tr>
+                  <th>
+                     생년월일
+                     <span class="star">*</span>
+                  </th>
+                  <td colspan="3">
+                     <select id="joinyear" class="box02">
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                     </select>
+                     <label for="joinyear">년</label>
+                     <select id="joinmonth" class="box02">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>11</option>
+                     </select>
+                     <label for="joinmonth">월</label>
+                     <select id="joinday" class="box02">
+                        <option>3</option>
+                        <option>24</option>
+                        <option>28</option>
+                     </select>
+                     <label for="joinday">일</label>
+
+                     <input type="radio" name="calender" id="sun" checked>
+                     <label for="sun">양력</label>
+                     <input type="radio" name="calender" id="moon" >
+                     <label for="moon">음력</label>
+                  </td>
+               </tr>
+
+               <tr>
+                  <th>
+                     주소
+                     <span class="star">*</span>
+                  </th>
+                  <td>
+                  <label>
+                     <input type="text" id="joinpost" maxlength="5" class=" box01">
+                     <label for="joinpost" class="away">우편번호입력</label>
+                     <button type="button">우편번호 검색</button>
+                     <br>
+                     <input type="text" id="joinaddr01" disabled class="box01">
+                     <label for="joinaddr01" class="away">주소입력</label>
+                     <input type="text" id="joinaddr02" class="box01" placeholder="나머지 주소를 입력하세요">
+                     <label for="joinaddr02" class="away">상세주소입력</label>
+                  </td>
+               </tr>
+               
+               <tr>
+                  <th>
+                     전화번호
+                     <span class="star">*</span>
+                  </th>
+                  <td colspan="3">
+                     <select id="phone01" class="box02">
+                        <option>031</option>
+                        <option selected>02</option>
+                        <option>034</option>
+                     </select>
+                     -
+                     <input type="text" id="phone01" class="box02" maxlength="4"> 
+                     - 
+                     <input type="text" id="phone01" class="box02" maxlength="4">
+                  </td>
+               </tr>
+               <tr>
+                  <th>
+                     핸드폰
+                     <span class="star">*</span>
+                  </th>
+                  <td colspan="3">
+                     <select id="phone02" class="box02">
+                        <option selected>010</option>
+                        <option>011</option>
+                        <option>012</option>
+                     </select>
+                     -
+                     <input type="text" id="phone01" class="box02" maxlength="4"> 
+                     - 
+                     <input type="text" id="phone01" class="box02" maxlength="4">
+                  </td>
+               </tr>
+
+               <tr>
+                  <th>
+                     이메일
+                     <span class="star">*</span>
+                  </th>
+                  <td>
+                     <input type="text" id="email" class="box01" placeholder="다양한 이벤트를 안내해 드립니다.">
+                  </td>
+                  <th>
+                     이메일 수신
+                     <span class="star">*</span>
+                  </th>
+                  <td>
+                     <input type="radio" id="yes" checked>
+                     <label for="yes">예</label>
+                     <input type="radio" id="no">
+                     <label for="no">아니오</label>
+                  </td>
+               </tr>
+            </table>
+         </fieldset>
+         <fieldset>
+            <legend>약관동의</legend>
+            <div class="member">
+               <h3>회원약관</h3>
+               <article> <!-- 여러문단(p)을 묶는 태그 -->
+                  <p>
+                     제1장 총칙 <br /><br /><br />
+
+                            제1조 목적 <br />
+
+                            이 통합약관은 CHEVY가 운영하는 (이하 "회사"라 한다)에서 제공하는 인터넷관련 서비스
+                            (이하 "서비스"라 한다)를 하나의 ID 로 각 사이트에 가입하여 이용함에 있어 투어로 이용자의 권리
+                            의무 및 책임사항을 규정함을 목적으로 합니다.<br /><br />
+
+                            제2조 약관의 효력과 변경
+                            1. 이 약관의 내용은 회원 가입과 동시에 서비스 화면에 게시하거나 기타의 방법으로 회원에게 공지
+                            함으로서 효력을 발생합니다. <br /><br />
+
+                            2. 회사는 이 규정을 변경할 수 있으며, 규정을 변경할 경우 제1항과 같은 방법으로 사전에 공지함
+                            으로서 효력을 발생합니다. <br /><br />
+
+                            제3조 약관의 준칙 <br /> 
+                            이 약관에 명시되지 않은 사항은 전기통신기본법, 전기통신사업법 및 기타관계법령의 규정에 따릅니다.<br /> <br />
+
+                            제4조 용어의 정의<br />
+                            이 규정에서 사용하는 용어의 정의는 다음과 같습니다.<br /><br />
+
+                            1. 회원 : 회사에 회원가입을 한 자, 회사와 서비스 이용계약을 체결한 자.<br />
+                            2. 아이디(ID) : 회원식별과 회원의 서비스 이용을 위하여 회원이 선정하고 회사가 승인한 문자 또는 숫자로 이루어진 조합.<br />
+                            3. 이메일(e-mail) : 회원의 인터넷 메일계정.<br />
+                            4. 비밀번호 : 회원이 부여받은 아이디(ID)와 일치된 회원임을 확인하고, 회원 자신의 비밀을 보호하기 위하여 회원이 정한 문자와 숫자의 조합.<br />
+                            5. 운영자 : 서비스의 전반적인 관리와 원활한 운영을 위하여 회사에서 선정한 자.<br />
+                            6. 해지 : 회사 또는 회원이 서비스 개통 후 이용계약을 해지 하는 것.<br />
+                  </p>
+               </article>
+               <input type="checkbox" id="memberchk" checked>
+               <label for="memberchk">회원약관에 동의합니다.</label>
+            </div>
+            <div class="personal">
+               <h3>개인정보 취급동의</h3>
+               <article> <!-- 여러문단(p)을 묶는 태그 -->
+                  <p>
+                     제1장 총칙 <br /><br /><br />
+
+                            제1조 목적 <br />
+
+                            이 통합약관은 CHEVY가 운영하는 (이하 "회사"라 한다)에서 제공하는 인터넷관련 서비스
+                            (이하 "서비스"라 한다)를 하나의 ID 로 각 사이트에 가입하여 이용함에 있어 투어로 이용자의 권리
+                            의무 및 책임사항을 규정함을 목적으로 합니다.<br /><br />
+
+                            제2조 약관의 효력과 변경
+                            1. 이 약관의 내용은 회원 가입과 동시에 서비스 화면에 게시하거나 기타의 방법으로 회원에게 공지
+                            함으로서 효력을 발생합니다. <br /><br />
+
+                            2. 회사는 이 규정을 변경할 수 있으며, 규정을 변경할 경우 제1항과 같은 방법으로 사전에 공지함
+                            으로서 효력을 발생합니다. <br /><br />
+
+                            제3조 약관의 준칙 <br /> 
+                            이 약관에 명시되지 않은 사항은 전기통신기본법, 전기통신사업법 및 기타관계법령의 규정에 따릅니다.<br /> <br />
+
+                            제4조 용어의 정의<br />
+                            이 규정에서 사용하는 용어의 정의는 다음과 같습니다.<br /><br />
+
+                            1. 회원 : 회사에 회원가입을 한 자, 회사와 서비스 이용계약을 체결한 자.<br />
+                            2. 아이디(ID) : 회원식별과 회원의 서비스 이용을 위하여 회원이 선정하고 회사가 승인한 문자 또는 숫자로 이루어진 조합.<br />
+                            3. 이메일(e-mail) : 회원의 인터넷 메일계정.<br />
+                            4. 비밀번호 : 회원이 부여받은 아이디(ID)와 일치된 회원임을 확인하고, 회원 자신의 비밀을 보호하기 위하여 회원이 정한 문자와 숫자의 조합.<br />
+                            5. 운영자 : 서비스의 전반적인 관리와 원활한 운영을 위하여 회사에서 선정한 자.<br />
+                            6. 해지 : 회사 또는 회원이 서비스 개통 후 이용계약을 해지 하는 것.<br />
+                  </p>
+               </article>
+               <input type="checkbox" id="personalchk" checked>
+               <label for="personalchk">개인정보 취급방침에 동의합니다.</label>
+            </div>
+            <div class="allchkarea">
+               <input type="checkbox" id="allchk">
+               <label for="allchk">회원약관, 개인정보 취급방침에 모두 동의합니다.</label>
+            </div>
+            <div class="btnarea">
+               <button type="submit" id="ok">확인</button>
+               <button type="reset" id="cancle">취소</button>
+            </div>
+         </fieldset>
+      </form>
+   </div>
+</body>
+</html>

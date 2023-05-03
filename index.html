@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>리치몬드</title>
+  <link rel="stylesheet" href="join.html">
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="images/common/favicon.png">
+
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- 제이쿼리 -->
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+  
+</head>
+<body>
+  <div class="popup">
+    <div class="pTop">
+      <div class="pTop_line">
+        <h1><img src="images/common/logo.png" alt=""></h1>
+        <div class="popup_notice">
+          <h2>NOTICE</h2><br>
+          <p>
+            본 사이트는 상업적 목적이 아닌 <span>개인 포트폴리오 용도</span>로 만들어 졌습니다. 홈페이지의 일부 내용과 이미지 등은 그 <span>출처가 따로 있음</span>을 밝힙니다.
+            본사이트는 <span>HTML5와 CSS3</span>를 기준으로 하여  크롬, 사파리, 파이어폭스, 오페라, 엣지의 브라우저에 맞춘 <span>적응형웹 홈페이지</span>입니다.
+          </p>
+
+        </div>
+        <div class="popup_mobile">
+          <h2>MOBILE</h2><br>
+          <ul>
+            <li>
+              <p>
+                오른쪽 <span>QR코드</span>를 스캔해주세요. <br>
+                <span>리치몬드 모바일 페이지</span>로 이동합니다.
+              </p>
+            </li>
+            <li class="qr_code">
+              <img src="images/common/QR.jpg" alt="QR코드">
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    <div class="pBottom">
+      <form action="#">
+        <fieldset>
+          <legend>오늘 하루 보지않기 폼</legend>
+          <ul class="popup_btn">
+            <li class="chkbox"><input type="checkbox" id="chkbox"><label for="chkbox">오늘하루보지않기</label></li>
+            <div class="pop_line"></div>
+            <li class="close"><a href="#">닫기</a></li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="black-background">
+    <div class="white-background">
+      <div><a href="" class="close_btn"><img src="images/common/close.png" alt="닫기"></a></div>
+      <h1><img src="images/common/logo.png" alt="로고"></h1>
+      <div class="search-bar">
+        <input class="searchId" type="text" placeholder="아이디를 입력하세요" />
+      </div>
+      <div class="search-bar">
+        <input class="searchPwd" type="password" placeholder="비밀번호를 입력하세요" maxlength="10"/>
+      </div>
+      <div class="member">
+        <ul>
+          <li class="login_btn"><a href="#">로그인</a></li>
+          <li class="join_btn"><a href="join.html">회원가입</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="inner_wrap">
+      <div class="h_top">
+        <ul>
+          <li><a href="#" id="login">LOGIN</a></li> 
+          <li><a href="#">1대1문의</a></li>
+          <li><a href="#">창업안내</a></li> 
+        </ul>
+      </div>
+      <nav class="gnb">
+        <h1><a href="#"><img src="images/common/logo.png" alt="로고"></a></h1>
+        <ul>
+          <li>
+            <a href="#" class="main_nav">Story</a>
+            <ul class="sub_nav">
+              <li><a href="#">인삿말</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">BI</a></li>
+              <li><a href="#">PR</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="main_nav">Store</a>
+            <ul class="sub_nav">
+              <li><a href="#">지역별 매장정보</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="main_nav">Bakery</a>
+            <ul class="sub_nav">
+              <li><a href="#">Bread</a></li>
+              <li><a href="#">Cake&Roll</a></li>
+              <li><a href="#">Baumkuchen</a></li>
+              <li><a href="#">Chocolate&Jam</a></li>
+              <li><a href="#">Icecream</a></li>
+              <li><a href="#">Sandwich&Salad</a></li>
+              <li><a href="#">화과자</a></li>
+              <li><a href="#">Gift set</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="main_nav">News & Event</a>
+            <ul class="sub_nav">
+              <li><a href="#">News&Events</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="main_nav">Service</a>
+            <ul class="sub_nav">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">창업상담</a></li>
+              <li><a href="#">Q&A</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="gnb_bg"></div>
+
+
+  </header>
+  <main>
+    <!-- swiper -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide main01">
+          <div class="inner_wrap banner01">
+            <h4>early bird event</h4>
+            <h6>매일 오전 9시부터 11시까지</h6>
+            <p>
+              ① 샌드위치 구매시, 아메리카노 무료증정<br>
+              ② 빵 or 케익 구매시, 아메리카노 1,000원
+            </p> 
+          </div>
+        </div>
+        <div class="swiper-slide main02">
+          <div class="inner_wrap banner02">
+            <h4>푸르니에 쇼콜라 4 + 1 EVENT</h4>
+            <h6>푸르니에 쇼콜라 4개 구매시 1개 무료증정</h6>
+            <p>
+              선물포장 해드립니다
+            </p> 
+          </div>
+        </div>
+        <div class="swiper-slide main03">
+                                       <div class="inner_wrap banner03">
+            <h4 class="h401"> [EVENT]리치몬드 홍대점</h4>
+            <h4 class="h402">X 삼백집 홍대점 콜라보레이션</h4>
+            <h6>
+              "리치몬드 홍대점"에서 1만원 이상 구매시 영수증을 지참하시고<br>
+              "삼백집" 방문시 만두튀김 한접시를 제공해 드립니다.
+            </h6>
+          </div>
+        </div>
+      </div>
+        <!-- next, prev_btn -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+  </div>
+  </main>
+  <div class="best_menu">
+    <h2>BestMenu</h2>
+      <ul class="best_menu_btn">
+        <li><a href="#">Bread</a></li>
+        <li><a href="#">Cake&Roll</a></li>
+        <li><a href="#">Baumkuchen</a></li>
+        <li><a href="#">Sandwich</a></li>
+        <li><a href="#">화과자</a></li>
+        <li><a href="#">Gift set</a></li>
+      </ul>
+      <div class="best_menu_list">
+        <div class="active" id="bread">
+          <ul>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/bread1.PNG" alt="하드빵이미지1">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>베르크슈타이거</h4>
+                <p>밀가루와 통호밀을 섞어 만든 호밀빵에 고소한 해바라기씨가 가득</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/bread2.png" alt="하드빵이미지2">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>바게트 오 브루</h4>
+                <p>가염버터가 뿌려진 짭짤한 바게트</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/bread3.PNG" alt="하드빵이미지3">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>슈톨렌</h4>
+                <p>1년간 숙성시킨 다섯가지 건과일과 견과류가 들어간 독일의 전통빵</p>
+            </div>
+            </li>
+          </ul>
+        </div>
+        <div id="cake">
+          <ul>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/cake1.jpg" alt="케이크이미지1">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>카스타드파이롤</h4>
+                <p>그윽한커피향의 부드러운 롤과 바삭한 파이의 조화</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/cake2.jpg" alt="케이크이미지2">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>비엔나</h4>
+                <p>초콜릿 케이크와 달콤쌉쌀한 2가지 종류의 초콜릿을 맛 볼 수 있는 케이크</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/cake3.PNG" alt="케이크이미지3">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>리치몬드롤</h4>
+                <p>시럽을 촉촉히 머금은 초코시트를 가나슈와 버터크림으로 샌드한 리치몬드과자점의 시그니처 케이크</p>
+            </div>
+            </li>
+          </ul>
+        </div>
+        <div id="baumkuchen">
+          <ul>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/baumkuchen1.jpg" alt="바움쿠헨이미지1">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>산딸기바움쿠헨</h4>
+                <p>산딸기잼, 화이트 초콜릿으로 맛을 더한 리치몬드만의 바움쿠헨</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/baumkuchen2.jpg" alt="바움쿠헨이미지2">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>갸또피레네</h4>
+                <p>살구잼의 새콤한 맛과 오렌지향이 잘 어우러진 프랑스식 바움쿠헨</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/baumkuchen3.png" alt="바움쿠헨이미지3">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>바움쿠헨 유</h4>
+                <p>정통 바움쿠헨보다 부드러운 식감을 가진 일본식 바움쿠헨</p>
+            </div>
+            </li>
+          </ul>
+        </div>
+        <div id="sandwich">
+          <ul>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/sandwich1.jpg" alt="샌드위치이미지1">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>브로첸</h4>
+                <p>깔끔하고 담백한 브로첸 빵에 신선한 야채와 로스트비프</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/sandwich2.jpg" alt="샌드위치이미지2">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>치아바타 샌드위치</h4>
+                <p>담백한 치아바타에 신선한 야채, 부드러운 햄이 들어간 건강한 샌드위치</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/sandwich3.jpg" alt="샌드위치이미지3">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>닭가슴살 샌드위치</h4>
+                <p>모닝을 빵 속에 닭 가슴살과 사과를 머무려 넣은 샌드위치</p>
+            </div>
+            </li>
+          </ul>
+        </div>
+        <div  id="cookie">
+          <ul>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/화과자1.png" alt="화과자이미지1">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>야유(세트)</h4>
+                <p>찹쌀떡의 쫄깃한 식감과 달콤한 귀여운 물고기 모양의 굽는 과자 아유(세트)</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/화과자2.png" alt="화과자이미지2">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>만주류(세트)</h4>
+                <p>달콤한 앙금이 가득한 구리만주, 카스텔이라, 유자, 녹차, 초코 만주(세트)</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/화과자3.png" alt="화과자이미지3">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>도라야끼</h4>
+                <p>달콤한 팥맛이 일품인 일본 전통 구움과자(세트)
+                </p>
+            </div>
+            </li>
+          </ul>
+        </div>
+        <div id="giftset">
+          <ul>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/giftset1.png" alt="선물세트이미지1">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>파운드세트</h4>
+                <p>찹쌀떡의 쫄깃한 식감과 달콤한 귀여운 물고기 모양의 굽는 과자 아유(세트)</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/giftset2.png" alt="선물세트이미지2">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>까눌레&네그르&넬류스코&누섹켄</h4>
+                <p>찹쌀떡의 쫄깃한 식감과 달콤한 귀여운 물고기 모양의 굽는 과자 아유(세트)</p>
+            </div>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img src="images/main/giftset3.png" alt="선물세트이미지3">
+                  <figcaption><span class="line">DETAIL</span></figcaption>
+                </figure>
+              </a>
+              <div class="text_wrap">
+                <h4>바통오랑쥬&아르덴쇼</h4>
+                <p>찹쌀떡의 쫄깃한 식감과 달콤한 귀여운 물고기 모양의 굽는 과자 아유(세트)</p>
+            </div>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+
+  </div>
+  <div class="franchise">
+    <h2>Franchise</h2>
+      <p>리치몬드와 함께하실 점주님을 모집합니다.</p>
+       <div class="inner_wrap">
+         <div class="franchise_box">          
+            <h3><span>리치몬드</span>를 함께 <br> 이끌 준비 되셨나요?</h3>
+              <p>
+                리치몬드 제과점은 정보공개서 기준 베이커리 업계 평균 대비 뚜렷한 장점이 있습니다.<br>
+                210% 높은 평당 매출, 60%저렴한 창업 비용, 차별화된 브랜딩, 따라올 수 없는 신선함과 <br>
+                맛, 효율적인 운영시스템.<br>
+                리치몬드 제과점과 함께 시작해보세요.
+              </p>
+          </div>
+          <div class="franchise_Shortcut">
+            <ul>
+              <li class="text"><a href="#">리치몬드 가맹문의 바로가기</a></li>
+              <li class="icon"><a href="#"><img src="images/main/arrow.png" alt="상세보기"></a></li>
+            </ul>
+          </div>
+        </div>
+  </div>
+  <div class="news_events">
+    <h2>NEWS & EVENTS</h2>
+      <div class="news_event_content">
+        <div class="tab_bar">
+          <ul>
+            <li class="event"><a href="#" class="active">EVENT</a></li>
+            <li class="news"><a href="#">NEWS</a></li>
+          </ul>
+        </div>
+        <div class="event_content_list">
+          <ul class="event_content active" >
+            <li>
+                <h3>[ 리치몬드 홍대점 ] EARLY BIRD EVENT</h3>
+                <h5>1. 샌드위치 구매시, 아메리카노 무료 증정 <br> 2. 빵 or 케익 구매시, 아메리카노 1,000원</h5>
+                <p>2023.01.03 ~ 2023.01.23</p>
+                <a href="#" class="arrow_item1"><img src="images/main/arrow.png" alt="상세보기"></a>
+            </li> 
+            <li>
+                <h3>쉬폰 4종 할인 이벤트</h3>
+                <h5>녹차, 딸기, 요거트, 모카, 블루베리 4종 구매시 10% 할인 <span>+ 선물포장</span></h5>
+                <p>2023.02.16 ~ 2023.02.28</p>
+                <a href="#" class="arrow_item2"><img src="images/main/arrow.png" alt="상세보기"></a>
+            </li>
+            <li>
+                <h3>푸르니에 쇼콜라 4+1 이벤트</h3>
+                <h5>푸르니에 쇼콜라 4개 구매시 1개 무료 증정</h5>
+                <p>2023.01.03 ~ 2023.01.23</p>
+                <a href="#" class="arrow_item3"><img src="images/main/arrow.png" alt="상세보기"></a>
+            </li>
+          </ul>
+          <ul class="news_content">
+            <li>
+                <h3>'수요미식회' 홍대빵집, <br> 리치몬드 제과점 '위치'는?</h3>
+                <p>2023.01.03 ~ 2023.01.23</p>
+                <a href="#" class="arrow_item1"><img src="images/main/arrow.png" alt="상세보기"></a>
+            </li> 
+            <li>
+                <h3>[중앙일보 강남통신_레드스푼5] <br> 옥수수·치즈쑥... 취향따라 맛있는 변신, 식빵</h3>
+                <p>2023.02.16 ~ 2023.02.28</p>
+                <a href="#" class="arrow_item2"><img src="images/main/arrow.png" alt="상세보기"></a>
+            </li>
+            <li>
+                <h3>[2016.02 OBS'명불허전'권상범 제과명장] <br> "열정 쏟으면 꿈은 이뤄진다"</h3>
+
+                <p>2023.01.03 ~ 2023.01.23</p>
+                <a href="#" class="arrow_item3"><img src="images/main/arrow.png" alt="상세보기"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <footer>
+
+    <div class="f_top">
+      <img src="./images/common/footer_logo.png" alt="푸터로고">
+    </div>
+    <div class="f_center">
+      <ul>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">브랜드소개</a></li>
+        <li><a href="#">창업안내</a></li>
+        <li><a href="#">안전보건경영방침</a></li>
+      </ul>
+    </div>
+    <div class="f_bottom">
+      <ul>
+        <li>상호 : 리치몬드 과자</li>
+        <li>대표이사 : 권형준</li>
+        <li>TEL : 02-325-221 / OFFICE : 202-3142-7494</li>
+      </ul>
+      <p>
+        우) 121-844 서울특별시 마포구 월드컵북로 86 리치몬드 빌딩 <br>
+        COPYRIGHT©2015, RicheMont, All rights reserved.
+      </p>
+    </div>
+    <aside class="scroll_top">
+      <a href="#" >스크롤탑버튼</a>
+    </aside>
+  </footer>
+  
+</body>
+</html>

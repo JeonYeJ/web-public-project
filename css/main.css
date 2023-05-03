@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+/* main */
+main {
+  width: 100%;
+  min-width: 1280px;
+  height: 700px;
+  margin-bottom: 100px;
+  position: relative; top: 90px;
+  
+}
+main .swiper{ width: 100%; height: 100%; }
+main .swiper-wrapper{ height: 100%; }
+
+main .swiper-slide{
+  height: 100%; 
+  background-position: center; background-repeat: no-repeat; background-size: cover;
+}
+
+main .main01{ background-image: url(/images/main/main_bg_01.jpg); }
+main .main02{ background-image: url(../images/main/main_bg_02.jpg); }
+main .main03{ background-image: url(../images/main/main_bg_03.jpg); }
+
+main .swiper-button-next:after, main .swiper-button-prev:after{
+  font-size: 60px; color: #fff; opacity: 0.5;
+}
+main .swiper-button-next{ right: 50px; }
+main .swiper-button-prev{ left: 50px; }
+main .swiper-button-next:hover:after, main .swiper-button-prev:hover:after{
+    opacity: 1;
+}
+main .inner_wrap{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+main .banner01 h4{
+  width: 640px; height: 100px; 
+  position: absolute; top: 150px; right: 0;
+  font-size: 70px; text-transform: uppercase;
+  color: #fff; border-bottom: 5px solid #fff;
+}
+main .banner01 h6{
+  width: 450px; height: 60px;
+  position: absolute; top: 280px; right: 0;
+  font-size: 35px; color: #fff; border-bottom: 2px solid #fff;
+}
+main .banner01 p{
+  width: 530px; height: 88px;
+  position: absolute; top: 400px; right: 0;
+  line-height: 70px; 
+  font-size: 28px; color: #fff; 
+}
+
+
+
+main .banner02 h4{
+  width: 828px; height: 70px;
+  position: absolute; top: 150px; right: 0;
+  color: #333; font-size: 60px;
+}
+
+main .banner02 h6{
+  width: 670px; height: 50px;
+  position: absolute; top: 300px; right: 0;
+  color: #333; font-size: 35px;
+}
+
+main .banner02 p{
+  width: 288px; height: 50px;
+  position: absolute; top: 510px; right: 0;
+  color: #666; font-size: 30px; font-weight: 700;
+}
+
+main .banner03 .h401{
+  position: absolute; top: 150px; right: 390px;
+  width: 675px; height: 80px;
+  color: #fff; font-size: 60px;
+}
+main .banner03 .h402{
+  position: absolute; top: 260px; right: 0;
+  width: 825px; height: 80px;
+  color: #fff; font-size: 60px;
+}
+
+main .banner03 h6{
+  position: absolute; top: 450px; left: 210px; text-align: center; line-height: 50px;
+  width: 860px; height: 100px;
+  color: #fff; font-size: 30px;
+}
+
+
+  /* Best_Menu */
+.best_menu {
+  width: 1280px;
+  height: 814px;
+  margin: 0 auto 100px;
+}
+
+
+
+
+/* franchise */
+.franchise {
+  width: 100%;
+  min-width: 1280px;
+  height: 1000px;
+  margin-bottom: 100px;
+  background-image: url(../images/main/franchise_bg.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.franchise h2 {
+  color: #dadada;
+  font-size: 40px;
+  margin: 40px;
+  padding-top: 158px;
+  position: relative;
+}
+.franchise p {
+  padding-bottom: 100px;
+  color: #ededed;
+}
+
+.franchise h2, p {
+  color: #dadada;
+  text-align: center;
+}
+
+.franchise_box {
+  position: relative;
+  width: 835px; height: 450px; padding: 74px;
+  border: 1px solid #666;
+  background-color: rgba(255,255,255,0.5);
+  
+}
+.franchise_box h3{
+  
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.franchise_box h3 span{
+  font-size: 40px;
+  font-weight: bolder;
+  color: #0f1f36;
+}
+.franchise_box p{
+  width: 100%; height: 130px; 
+  font-size: 17px;
+  text-align: left;
+  line-height: 2;
+  color: black;
+  
+}
+
+.franchise_Shortcut {
+  width: 835px; height: 70px;
+  background-color: rgba(255, 255,255,0.5);
+
+}
+.franchise_Shortcut .text {
+  width: 753px; height: 70px;
+  border: 1px solid #666;
+  line-height: 70px;
+}
+.franchise_Shortcut .text a {
+  margin-left: 72px;
+  font-weight: bold;
+  color: #333;
+}
+.franchise_Shortcut .icon{
+  width: 82px; height: 70px;
+  border: 1px solid #666;
+  text-align: center;
+  line-height: 82px;
+}
+.franchise_Shortcut ul{
+  display: flex;
+  justify-content: space-between;
+}
+.franchise_Shortcut > ul > li > a:hover{
+  font-size: 20px;
+}
+.franchise_Shortcut ul .icon:hover{
+  background-color: #ededed;
+  font-size: large;
+  
+}
+
+/* news_events */
+.news_events{
+  width: 1280px;
+  height: 780px;
+  margin: 0 auto 100px;
+}
+.news_event_content {
+  width: 1280px;
+  height: 678px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.news_event_content .tab_bar{
+  width: 390px;
+  height: 678px;
+  display: grid;
+  align-items: center;
+  flex-direction: column;
+}
+
+.event_content_list{
+  width: 890px;
+  height: 678px;
+}
+
+.news_event_content .tab_bar .news,.event{
+  width: 230px; height: 230px;
+  background-color: #ededed;
+  margin: 0 auto 20px;
+}
+.news_event_content .tab_bar ul li:last-child{
+  margin-bottom: 0;
+}
+.event_content_list > ul{
+  display: none;
+  flex-direction: column;
+}
+.event_content_list > ul.active{
+  display: flex;
+}
+.event_content_list ul li{
+  width: 100%; height: 225px;
+  border-bottom: 2px solid #333;
+
+}
+
+.event_content_list .event_content{
+  line-height: 72px;
+  position: relative;
+}
+.event_content_list ul li:last-child{
+border-bottom: none;
+}
+
+
+.event_content h3{
+  margin: 10px 0;
+}
+.event_content h5{
+  margin: 10px 0;
+  line-height: 1.6;
+}
+.event_content p{
+  margin: 10px 0;
+}
+.event_content_list h5 span{
+  font-size: 15px;
+}
+.news_event_content .tab_bar a:hover, .news_event_content .tab_bar a.active{
+  background-color: #0f1f36;
+  color: #fff;
+}
+
+.news_content h3{
+  margin: 45px 0;
+}
+
+
+
+
+.news_event_content .tab_bar a{
+  display: block;
+  font-size: 40px; font-weight: 700; text-align: center;
+  line-height: 225px;
+}
+.event_content .arrow_item1{
+  position: absolute; top: 85px; right: 30px;
+}
+.event_content .arrow_item2{
+  position: absolute; top: 305px; right: 30px;
+}
+.event_content .arrow_item3{
+  position: absolute; top: 530px; right: 20px;
+}
+
+
+.news_content{ position: relative; }
+.news_content .arrow_item1{
+  position: absolute; top: 95px; right: 30px;
+}
+.news_content .arrow_item2{
+  position: absolute; top: 315px; right: 30px;
+}
+.news_content .arrow_item3{
+  position: absolute; top: 540px; right: 20px;
+}
+
+.event_content a:hover, .news_content a:hover{
+  transform: translateX(20px);
+  transition: 0.3s;
+}
+
+/* best-menu */
+
+/* list */
+.best_menu_btn {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 100px;
+}
+.best_menu h2{
+position: relative; top: 70px;
+}
+.best_menu_btn li::after {
+  content: '|';
+  font-size: 15px;
+  margin: 25px;
+}
+.best_menu li:last-child::after {
+  display: none; 
+}     
+.best_menu_btn > li > a:hover, .best_menu_btn > li > a.active{
+  font-weight: bold;
+  /* font-size: 20px; */
+}
+.best_menu_list > div{
+  display: none;
+}
+.best_menu_list > div.active{
+  display: block;
+}
+
+.best_menu_list{
+  width: 1280px; height: 550px; margin: 0 auto;
+}
+.best_menu_list ul{
+  display: flex;
+  justify-content: space-between;
+}
+.best_menu_list li{
+  width: 400px; height: 550px;
+}
+.best_menu_list figure img{
+  width: 400px; height: 350px;
+  object-fit: cover;
+  transition: 0.3s ease-in;
+}
+.best_menu_list figure{
+  position: absolute;
+  overflow: hidden;
+}
+
+.best_menu_list .text_wrap{
+  width: 400px; height: 200px; 
+}
+
+.best_menu_list figcaption{
+  width: 100%; height: 100%;
+  position: absolute; top: 0px; left: 0; 
+  background-color: rgba(0, 0,0,0.3);
+  text-align: center; line-height: 350px; color: #fff;
+  
+  opacity: 0;
+  transition: 0.3s;
+}
+.best_menu_list a:hover img{ transform: scale(1.1); }
+.best_menu_list a:hover figcaption{ opacity: 1; }
+.best_menu_list .text_wrap{
+  position: relative; top: 340px;
+}
+
+.best_menu_list li .line{ 
+  padding-bottom: 4px; border-bottom: 2px solid #fff;
+  color: #fff; font-size: 25px;
+  line-height: 350px;
+}
+.best_menu_list .text_wrap{
+  padding-top: 30px;
+}
+.best_menu_list .text_wrap p{
+  margin: 10px;
+  text-align: left; color: #333;
+  line-height: 1.5;
+}
+.best_menu_list .text_wrap h4{
+  font-size: 24px;
+  margin: 10px;
+}
+
+
+/* main */
+.event_content_list p{
+  text-align: left;
+  font-size: 13px;
+  color: #333;
+}
