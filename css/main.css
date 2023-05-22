@@ -180,8 +180,8 @@ main .banner03 h6{
   display: flex;
   justify-content: space-between;
 }
-.franchise_Shortcut > ul > li > a:hover{
-  font-size: 20px;
+.franchise_Shortcut .text a:hover{
+  border-bottom: 2px solid #0f1f36;
 }
 .franchise_Shortcut ul .icon:hover{
   background-color: #ededed;
@@ -317,6 +317,7 @@ position: relative; top: 70px;
   content: '|';
   font-size: 15px;
   margin: 25px;
+  
 }
 .best_menu li:last-child::after {
   display: none; 

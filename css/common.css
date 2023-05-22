@@ -179,7 +179,10 @@ header {
   display: block;
   width: 100%; height: 100%;
   font-weight: 600; 
-
+}
+.gnb .main_nav:hover{
+  background-color: #0f1f36;
+  color: #fff;
 }
 header .gnb_bg{
   display: none;
@@ -199,7 +202,9 @@ header .sub_nav a{
   line-height: 43px;
 }
 header .sub_nav a:hover{
-  border-bottom: 3px solid #0f1f36;
+  /* border-bottom: 3px solid #0f1f36; */
+  color: #fff;
+  
 }
 
 
